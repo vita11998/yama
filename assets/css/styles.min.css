@@ -5183,6 +5183,33 @@ header.active .main_head .nav_menu li:first-child {
     opacity: 0
 }
 
+.middle .prod_feature .box_feature { 
+    background: url("https://www.hondapowerproducts.co.id/html/images/material/home_.jpg") no-repeat right top !important;
+}
+@keyframes  example {
+    from {left:0px;}
+    to {left: 100px;}
+}
+
+.subscriber-success {
+    position:absolute;
+}
+
+.subscriber-success.success {
+    background-color:#057034;
+    padding:10px;
+    margin-top:0px;
+}
+
+
+#subsForm input.error {
+    background-color:#FD9C9C;
+}
+
+#subsForm label.error {
+    display:none !important;
+}
+
 .middle .new_home .list_Hnews .item .img {
     position: relative;
     overflow: hidden
