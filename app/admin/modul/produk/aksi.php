@@ -79,7 +79,7 @@ use \Gumlet\ImageResize;
                     'promo' => $_POST['promo'],
                     'keyword' => $_POST['keyword'],
                     'description' => $_POST['description'],
-                    'tgl' => $tgl_post
+                    'tgl' => $tgl_post,
 
                 );
                 $saved = $db->update( 'produk', $datas, "id_produk = '$_POST[id_produk]' " );
