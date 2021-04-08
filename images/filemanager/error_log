@@ -1,0 +1,237 @@
+[11-Mar-2021 11:29:54 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mime_content_type() in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php:2723
+Stack trace:
+#0 /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php(230): imageLib->openImage('../source/19199...')
+#1 /home3/onedaycl/public_html/images/filemanager/include/utils.php(425): imageLib->__construct('../source/19199...')
+#2 /home3/onedaycl/public_html/images/filemanager/UploadHandler.php(1483): create_img('../source/19199...', '../thumbs/19199...', 122, 91)
+#3 /home3/onedaycl/public_html/images/filemanager/UploadHandler.php(1432): UploadHandler->onUploadEnd(Array)
+#4 /home3/onedaycl/public_html/images/filemanager/UploadHandler.php(213): UploadHandler->post(false)
+#5 /home3/onedaycl/public_html/images/filemanager/UploadHandler.php(197): UploadHandler->initialize()
+#6 /home3/onedaycl/public_html/images/filemanager/upload.php(179): UploadHandler->__construct(Array, true, Array)
+#7 {main}
+  thrown in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php on line 2723
+[11-Mar-2021 11:30:03 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mime_content_type() in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php:2723
+Stack trace:
+#0 /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php(230): imageLib->openImage('../source/19199...')
+#1 /home3/onedaycl/public_html/images/filemanager/include/utils.php(425): imageLib->__construct('../source/19199...')
+#2 /home3/onedaycl/public_html/images/filemanager/dialog.php(1083): create_img('../source/19199...', '../thumbs/19199...', 122, 91, 'crop', Array)
+#3 {main}
+  thrown in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php on line 2723
+[11-Mar-2021 11:30:07 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mime_content_type() in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php:2723
+Stack trace:
+#0 /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php(230): imageLib->openImage('../source/19199...')
+#1 /home3/onedaycl/public_html/images/filemanager/include/utils.php(425): imageLib->__construct('../source/19199...')
+#2 /home3/onedaycl/public_html/images/filemanager/dialog.php(1083): create_img('../source/19199...', '../thumbs/19199...', 122, 91, 'crop', Array)
+#3 {main}
+  thrown in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php on line 2723
+[11-Mar-2021 11:30:10 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mime_content_type() in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php:2723
+Stack trace:
+#0 /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php(230): imageLib->openImage('../source/19199...')
+#1 /home3/onedaycl/public_html/images/filemanager/include/utils.php(425): imageLib->__construct('../source/19199...')
+#2 /home3/onedaycl/public_html/images/filemanager/dialog.php(1083): create_img('../source/19199...', '../thumbs/19199...', 122, 91, 'crop', Array)
+#3 {main}
+  thrown in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php on line 2723
+[11-Mar-2021 11:30:24 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mime_content_type() in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php:2723
+Stack trace:
+#0 /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php(230): imageLib->openImage('../source/19199...')
+#1 /home3/onedaycl/public_html/images/filemanager/include/utils.php(425): imageLib->__construct('../source/19199...')
+#2 /home3/onedaycl/public_html/images/filemanager/UploadHandler.php(1483): create_img('../source/19199...', '../thumbs/19199...', 122, 91)
+#3 /home3/onedaycl/public_html/images/filemanager/UploadHandler.php(1432): UploadHandler->onUploadEnd(Array)
+#4 /home3/onedaycl/public_html/images/filemanager/UploadHandler.php(213): UploadHandler->post(false)
+#5 /home3/onedaycl/public_html/images/filemanager/UploadHandler.php(197): UploadHandler->initialize()
+#6 /home3/onedaycl/public_html/images/filemanager/upload.php(179): UploadHandler->__construct(Array, true, Array)
+#7 {main}
+  thrown in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php on line 2723
+[11-Mar-2021 11:30:35 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mime_content_type() in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php:2723
+Stack trace:
+#0 /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php(230): imageLib->openImage('../source/TripA...')
+#1 /home3/onedaycl/public_html/images/filemanager/include/utils.php(425): imageLib->__construct('../source/TripA...')
+#2 /home3/onedaycl/public_html/images/filemanager/UploadHandler.php(1483): create_img('../source/TripA...', '../thumbs/TripA...', 122, 91)
+#3 /home3/onedaycl/public_html/images/filemanager/UploadHandler.php(1432): UploadHandler->onUploadEnd(Array)
+#4 /home3/onedaycl/public_html/images/filemanager/UploadHandler.php(213): UploadHandler->post(false)
+#5 /home3/onedaycl/public_html/images/filemanager/UploadHandler.php(197): UploadHandler->initialize()
+#6 /home3/onedaycl/public_html/images/filemanager/upload.php(179): UploadHandler->__construct(Array, true, Array)
+#7 {main}
+  thrown in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php on line 2723
+[11-Mar-2021 11:30:44 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mime_content_type() in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php:2723
+Stack trace:
+#0 /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php(230): imageLib->openImage('../source/TripA...')
+#1 /home3/onedaycl/public_html/images/filemanager/include/utils.php(425): imageLib->__construct('../source/TripA...')
+#2 /home3/onedaycl/public_html/images/filemanager/dialog.php(1083): create_img('../source/TripA...', '../thumbs/TripA...', 122, 91, 'crop', Array)
+#3 {main}
+  thrown in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php on line 2723
+[11-Mar-2021 11:30:52 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mime_content_type() in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php:2723
+Stack trace:
+#0 /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php(230): imageLib->openImage('../source/image...')
+#1 /home3/onedaycl/public_html/images/filemanager/include/utils.php(425): imageLib->__construct('../source/image...')
+#2 /home3/onedaycl/public_html/images/filemanager/UploadHandler.php(1483): create_img('../source/image...', '../thumbs/image...', 122, 91)
+#3 /home3/onedaycl/public_html/images/filemanager/UploadHandler.php(1432): UploadHandler->onUploadEnd(Array)
+#4 /home3/onedaycl/public_html/images/filemanager/UploadHandler.php(213): UploadHandler->post(false)
+#5 /home3/onedaycl/public_html/images/filemanager/UploadHandler.php(197): UploadHandler->initialize()
+#6 /home3/onedaycl/public_html/images/filemanager/upload.php(179): UploadHandler->__construct(Array, true, Array)
+#7 {main}
+  thrown in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php on line 2723
+[11-Mar-2021 11:30:59 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mime_content_type() in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php:2723
+Stack trace:
+#0 /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php(230): imageLib->openImage('../source/TripA...')
+#1 /home3/onedaycl/public_html/images/filemanager/include/utils.php(425): imageLib->__construct('../source/TripA...')
+#2 /home3/onedaycl/public_html/images/filemanager/dialog.php(1083): create_img('../source/TripA...', '../thumbs/TripA...', 122, 91, 'crop', Array)
+#3 {main}
+  thrown in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php on line 2723
+[11-Mar-2021 11:31:31 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mime_content_type() in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php:2723
+Stack trace:
+#0 /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php(230): imageLib->openImage('../source/TripA...')
+#1 /home3/onedaycl/public_html/images/filemanager/include/utils.php(425): imageLib->__construct('../source/TripA...')
+#2 /home3/onedaycl/public_html/images/filemanager/dialog.php(1083): create_img('../source/TripA...', '../thumbs/TripA...', 122, 91, 'crop', Array)
+#3 {main}
+  thrown in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php on line 2723
+[11-Mar-2021 11:31:46 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mime_content_type() in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php:2723
+Stack trace:
+#0 /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php(230): imageLib->openImage('../source/vwnol...')
+#1 /home3/onedaycl/public_html/images/filemanager/include/utils.php(425): imageLib->__construct('../source/vwnol...')
+#2 /home3/onedaycl/public_html/images/filemanager/UploadHandler.php(1483): create_img('../source/vwnol...', '../thumbs/vwnol...', 122, 91)
+#3 /home3/onedaycl/public_html/images/filemanager/UploadHandler.php(1432): UploadHandler->onUploadEnd(Array)
+#4 /home3/onedaycl/public_html/images/filemanager/UploadHandler.php(213): UploadHandler->post(false)
+#5 /home3/onedaycl/public_html/images/filemanager/UploadHandler.php(197): UploadHandler->initialize()
+#6 /home3/onedaycl/public_html/images/filemanager/upload.php(179): UploadHandler->__construct(Array, true, Array)
+#7 {main}
+  thrown in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php on line 2723
+[12-Mar-2021 09:45:15 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mime_content_type() in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php:2723
+Stack trace:
+#0 /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php(230): imageLib->openImage('../source/vwnol...')
+#1 /home3/onedaycl/public_html/images/filemanager/include/utils.php(425): imageLib->__construct('../source/vwnol...')
+#2 /home3/onedaycl/public_html/images/filemanager/dialog.php(1083): create_img('../source/vwnol...', '../thumbs/vwnol...', 122, 91, 'crop', Array)
+#3 {main}
+  thrown in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php on line 2723
+[12-Mar-2021 09:50:51 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mime_content_type() in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php:2723
+Stack trace:
+#0 /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php(230): imageLib->openImage('../source/vwnol...')
+#1 /home3/onedaycl/public_html/images/filemanager/include/utils.php(425): imageLib->__construct('../source/vwnol...')
+#2 /home3/onedaycl/public_html/images/filemanager/dialog.php(1083): create_img('../source/vwnol...', '../thumbs/vwnol...', 122, 91, 'crop', Array)
+#3 {main}
+  thrown in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php on line 2723
+[12-Mar-2021 10:07:39 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mime_content_type() in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php:2723
+Stack trace:
+#0 /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php(230): imageLib->openImage('../source/vwnol...')
+#1 /home3/onedaycl/public_html/images/filemanager/include/utils.php(425): imageLib->__construct('../source/vwnol...')
+#2 /home3/onedaycl/public_html/images/filemanager/dialog.php(1083): create_img('../source/vwnol...', '../thumbs/vwnol...', 122, 91, 'crop', Array)
+#3 {main}
+  thrown in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php on line 2723
+[12-Mar-2021 10:07:49 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mime_content_type() in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php:2723
+Stack trace:
+#0 /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php(230): imageLib->openImage('../source/vwnol...')
+#1 /home3/onedaycl/public_html/images/filemanager/include/utils.php(425): imageLib->__construct('../source/vwnol...')
+#2 /home3/onedaycl/public_html/images/filemanager/dialog.php(1083): create_img('../source/vwnol...', '../thumbs/vwnol...', 122, 91, 'crop', Array)
+#3 {main}
+  thrown in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php on line 2723
+[12-Mar-2021 10:08:57 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mime_content_type() in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php:2723
+Stack trace:
+#0 /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php(230): imageLib->openImage('../source/vwnol...')
+#1 /home3/onedaycl/public_html/images/filemanager/include/utils.php(425): imageLib->__construct('../source/vwnol...')
+#2 /home3/onedaycl/public_html/images/filemanager/dialog.php(1083): create_img('../source/vwnol...', '../thumbs/vwnol...', 122, 91, 'crop', Array)
+#3 {main}
+  thrown in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php on line 2723
+[12-Mar-2021 10:09:10 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mime_content_type() in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php:2723
+Stack trace:
+#0 /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php(230): imageLib->openImage('../source/40ONE...')
+#1 /home3/onedaycl/public_html/images/filemanager/include/utils.php(425): imageLib->__construct('../source/40ONE...')
+#2 /home3/onedaycl/public_html/images/filemanager/UploadHandler.php(1483): create_img('../source/40ONE...', '../thumbs/40ONE...', 122, 91)
+#3 /home3/onedaycl/public_html/images/filemanager/UploadHandler.php(1432): UploadHandler->onUploadEnd(Array)
+#4 /home3/onedaycl/public_html/images/filemanager/UploadHandler.php(213): UploadHandler->post(false)
+#5 /home3/onedaycl/public_html/images/filemanager/UploadHandler.php(197): UploadHandler->initialize()
+#6 /home3/onedaycl/public_html/images/filemanager/upload.php(179): UploadHandler->__construct(Array, true, Array)
+#7 {main}
+  thrown in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php on line 2723
+[12-Mar-2021 10:09:16 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mime_content_type() in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php:2723
+Stack trace:
+#0 /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php(230): imageLib->openImage('../source/vwnol...')
+#1 /home3/onedaycl/public_html/images/filemanager/include/utils.php(425): imageLib->__construct('../source/vwnol...')
+#2 /home3/onedaycl/public_html/images/filemanager/dialog.php(1083): create_img('../source/vwnol...', '../thumbs/vwnol...', 122, 91, 'crop', Array)
+#3 {main}
+  thrown in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php on line 2723
+[12-Mar-2021 10:12:02 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mime_content_type() in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php:2723
+Stack trace:
+#0 /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php(230): imageLib->openImage('../source/40ONE...')
+#1 /home3/onedaycl/public_html/images/filemanager/include/utils.php(425): imageLib->__construct('../source/40ONE...')
+#2 /home3/onedaycl/public_html/images/filemanager/UploadHandler.php(1483): create_img('../source/40ONE...', '../thumbs/40ONE...', 122, 91)
+#3 /home3/onedaycl/public_html/images/filemanager/UploadHandler.php(1432): UploadHandler->onUploadEnd(Array)
+#4 /home3/onedaycl/public_html/images/filemanager/UploadHandler.php(213): UploadHandler->post(false)
+#5 /home3/onedaycl/public_html/images/filemanager/UploadHandler.php(197): UploadHandler->initialize()
+#6 /home3/onedaycl/public_html/images/filemanager/upload.php(179): UploadHandler->__construct(Array, true, Array)
+#7 {main}
+  thrown in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php on line 2723
+[12-Mar-2021 10:14:51 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mime_content_type() in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php:2723
+Stack trace:
+#0 /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php(230): imageLib->openImage('../source/40ONE...')
+#1 /home3/onedaycl/public_html/images/filemanager/include/utils.php(425): imageLib->__construct('../source/40ONE...')
+#2 /home3/onedaycl/public_html/images/filemanager/dialog.php(1083): create_img('../source/40ONE...', '../thumbs/40ONE...', 122, 91, 'crop', Array)
+#3 {main}
+  thrown in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php on line 2723
+[12-Mar-2021 10:15:02 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mime_content_type() in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php:2723
+Stack trace:
+#0 /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php(230): imageLib->openImage('../source/40ONE...')
+#1 /home3/onedaycl/public_html/images/filemanager/include/utils.php(425): imageLib->__construct('../source/40ONE...')
+#2 /home3/onedaycl/public_html/images/filemanager/UploadHandler.php(1483): create_img('../source/40ONE...', '../thumbs/40ONE...', 122, 91)
+#3 /home3/onedaycl/public_html/images/filemanager/UploadHandler.php(1432): UploadHandler->onUploadEnd(Array)
+#4 /home3/onedaycl/public_html/images/filemanager/UploadHandler.php(213): UploadHandler->post(false)
+#5 /home3/onedaycl/public_html/images/filemanager/UploadHandler.php(197): UploadHandler->initialize()
+#6 /home3/onedaycl/public_html/images/filemanager/upload.php(179): UploadHandler->__construct(Array, true, Array)
+#7 {main}
+  thrown in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php on line 2723
+[12-Mar-2021 10:17:53 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mime_content_type() in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php:2723
+Stack trace:
+#0 /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php(230): imageLib->openImage('../source/40ONE...')
+#1 /home3/onedaycl/public_html/images/filemanager/include/utils.php(425): imageLib->__construct('../source/40ONE...')
+#2 /home3/onedaycl/public_html/images/filemanager/UploadHandler.php(1483): create_img('../source/40ONE...', '../thumbs/40ONE...', 122, 91)
+#3 /home3/onedaycl/public_html/images/filemanager/UploadHandler.php(1432): UploadHandler->onUploadEnd(Array)
+#4 /home3/onedaycl/public_html/images/filemanager/UploadHandler.php(213): UploadHandler->post(false)
+#5 /home3/onedaycl/public_html/images/filemanager/UploadHandler.php(197): UploadHandler->initialize()
+#6 /home3/onedaycl/public_html/images/filemanager/upload.php(179): UploadHandler->__construct(Array, true, Array)
+#7 {main}
+  thrown in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php on line 2723
+[12-Mar-2021 10:18:02 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mime_content_type() in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php:2723
+Stack trace:
+#0 /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php(230): imageLib->openImage('../source/40ONE...')
+#1 /home3/onedaycl/public_html/images/filemanager/include/utils.php(425): imageLib->__construct('../source/40ONE...')
+#2 /home3/onedaycl/public_html/images/filemanager/dialog.php(1083): create_img('../source/40ONE...', '../thumbs/40ONE...', 122, 91, 'crop', Array)
+#3 {main}
+  thrown in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php on line 2723
+[12-Mar-2021 10:19:16 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mime_content_type() in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php:2723
+Stack trace:
+#0 /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php(230): imageLib->openImage('../source/40ONE...')
+#1 /home3/onedaycl/public_html/images/filemanager/include/utils.php(425): imageLib->__construct('../source/40ONE...')
+#2 /home3/onedaycl/public_html/images/filemanager/UploadHandler.php(1483): create_img('../source/40ONE...', '../thumbs/40ONE...', 122, 91)
+#3 /home3/onedaycl/public_html/images/filemanager/UploadHandler.php(1432): UploadHandler->onUploadEnd(Array)
+#4 /home3/onedaycl/public_html/images/filemanager/UploadHandler.php(213): UploadHandler->post(false)
+#5 /home3/onedaycl/public_html/images/filemanager/UploadHandler.php(197): UploadHandler->initialize()
+#6 /home3/onedaycl/public_html/images/filemanager/upload.php(179): UploadHandler->__construct(Array, true, Array)
+#7 {main}
+  thrown in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php on line 2723
+[12-Mar-2021 10:22:19 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mime_content_type() in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php:2723
+Stack trace:
+#0 /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php(230): imageLib->openImage('../source/40ONE...')
+#1 /home3/onedaycl/public_html/images/filemanager/include/utils.php(425): imageLib->__construct('../source/40ONE...')
+#2 /home3/onedaycl/public_html/images/filemanager/dialog.php(1083): create_img('../source/40ONE...', '../thumbs/40ONE...', 122, 91, 'crop', Array)
+#3 {main}
+  thrown in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php on line 2723
+[12-Mar-2021 10:22:32 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mime_content_type() in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php:2723
+Stack trace:
+#0 /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php(230): imageLib->openImage('../source/40ONE...')
+#1 /home3/onedaycl/public_html/images/filemanager/include/utils.php(425): imageLib->__construct('../source/40ONE...')
+#2 /home3/onedaycl/public_html/images/filemanager/UploadHandler.php(1483): create_img('../source/40ONE...', '../thumbs/40ONE...', 122, 91)
+#3 /home3/onedaycl/public_html/images/filemanager/UploadHandler.php(1432): UploadHandler->onUploadEnd(Array)
+#4 /home3/onedaycl/public_html/images/filemanager/UploadHandler.php(213): UploadHandler->post(false)
+#5 /home3/onedaycl/public_html/images/filemanager/UploadHandler.php(197): UploadHandler->initialize()
+#6 /home3/onedaycl/public_html/images/filemanager/upload.php(179): UploadHandler->__construct(Array, true, Array)
+#7 {main}
+  thrown in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php on line 2723
+[12-Mar-2021 10:25:57 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mime_content_type() in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php:2723
+Stack trace:
+#0 /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php(230): imageLib->openImage('../source/40ONE...')
+#1 /home3/onedaycl/public_html/images/filemanager/include/utils.php(425): imageLib->__construct('../source/40ONE...')
+#2 /home3/onedaycl/public_html/images/filemanager/UploadHandler.php(1483): create_img('../source/40ONE...', '../thumbs/40ONE...', 122, 91)
+#3 /home3/onedaycl/public_html/images/filemanager/UploadHandler.php(1432): UploadHandler->onUploadEnd(Array)
+#4 /home3/onedaycl/public_html/images/filemanager/UploadHandler.php(213): UploadHandler->post(false)
+#5 /home3/onedaycl/public_html/images/filemanager/UploadHandler.php(197): UploadHandler->initialize()
+#6 /home3/onedaycl/public_html/images/filemanager/upload.php(179): UploadHandler->__construct(Array, true, Array)
+#7 {main}
+  thrown in /home3/onedaycl/public_html/images/filemanager/include/php_image_magician.php on line 2723

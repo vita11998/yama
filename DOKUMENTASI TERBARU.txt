@@ -1,0 +1,36 @@
+
+/*
+ * ------------------------------------------------------
+ *  DOKUMENTASI
+ * ------------------------------------------------------
+ */
+ 
+ ## Langkah - Langkah Penggunaan
+ 
+1. Ganti database ada di system/database.php
+
+2. Ganti HTACCESS / URL Berada di index.php dan app/admin/router.php (untuk admin)
+
+3. Template Front End di app/template.php
+
+4. Ambil data dari database / query di index.php, contoh url about :
+    
+  $router->get('/about', function () use ($templates,$db) {
+     //Trigger SEO
+     $templates->addData(['seo' => 'about']);
+     
+     $data = $db->connection("SELECT * FROM page WHERE id_page = 1 ")->fetch();
+     echo $templates->render('about', ['data' => $data]); ==> Menuju ke file (app/merdeka.php) 
+  });
+
+5. Ganti SEO ada di app/seo.php
+
+6. Data Aman dari inject 
+   <?=$this->e($dataku)?>
+
+7. Edit untuk pengirim Email ada di database tabel email / system/helper_email.php
+
+8. Setelah Selesai jangan lupa sembunyikan notifikasi error di index.php paling atas
+
+
+   

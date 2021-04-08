@@ -1,0 +1,22 @@
+{
+    "name": "CV Berkah Konveksi Jaya",
+    "short_name": "Konveksi",
+    "start_url":"index.php",
+    "scope": ".", 
+    "description":"Berkah Konveksi Jaya",
+    "icons": [
+        {
+            "src": "android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#FFCB01",
+    "background_color": "#FFCB01",
+    "display": "standalone"
+}
