@@ -88,12 +88,12 @@
                                     <input name="judul" type="text" class="form-control" required>
                                 </div>
                             </div>
-                            <!-- <div class="col-md-6">
+                            <div class="col-md-12">
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Harga</label>
-                                    <input name="harga" type="text" class="form-control ninjin" required>
+                                    <label for="exampleInputEmail1">Keterangan Singkat</label>
+                                    <input name="promo" type="text" class="form-control" required>
                                 </div>
-                            </div> -->
+                            </div>
                             <!-- <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Tgl Publish</label>
@@ -105,7 +105,16 @@
                                     </div>
                                 </div>
                             </div> -->
-                            <div class="col-md-12">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">Unggulan</label>
+                                    <select name="unggulan" class="form-control">
+                                        <option value="Ya">Ya</option>
+                                        <option value="Tidak">Tidak</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="">Kategori</label>
                                     <select class="form-control" name="id_kategori">
@@ -207,6 +216,25 @@
                                 </div>
                             </div>
                             <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Keterangan Singkat</label>
+                                    <input name="promo" type="text" class="form-control"
+                                        value="<?php echo $data['promo'] ?>" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">Unggulan</label>
+                                    <select name="unggulan" class="form-control">
+                                        <option value="Ya" <?php echo ($data['unggulan'] == 'Ya')?'selected' : '' ?>>Ya
+                                        </option>
+                                        <option value="Tidak"
+                                            <?php echo ($data['unggulan'] == 'Tidak')?'selected' : '' ?>>Tidak
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="">Kategori</label>
                                     <select class="form-control" name="id_kategori">

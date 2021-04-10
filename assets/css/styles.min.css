@@ -4157,7 +4157,7 @@ header .top_head a.login {
 }
 
 header .top_head a.login:before {
-    background: url(../images/material/ico_login.png) no-repeat;
+    
     width: 11px;
     height: 16px;
     position: absolute;
@@ -4362,10 +4362,10 @@ header .main_head .nav_menu nav li.have_child.product {
     border-bottom: 3px solid transparent
 }
 
-header .main_head .nav_menu nav li.have_child.product a {
+/* header .main_head .nav_menu nav li.have_child.product a {
     background: url(../images/material/arr_menu.png) no-repeat 100%;
     text-align: left
-}
+} */
 
 header .main_head .nav_menu nav li.have_child.product:hover {
     border-bottom: 3px solid #adadad
@@ -4449,7 +4449,6 @@ header .main_head .nav_menu nav li .sub ul li .sub2 .bx-wrapper .bx-viewport {
 }
 
 header .main_head .nav_menu nav li .sub ul li .sub2 .bx-wrapper .bx-controls-direction a {
-    background: #0283cc url(../images/material/arr_btn_slide.png) no-repeat 0;
     width: 26px;
     height: 25px;
     left: -25px;
@@ -4502,7 +4501,6 @@ header .main_head .nav_menu nav li .sub ul li .sub2 .back_sub {
 header .main_head .nav_menu nav li .sub ul li .sub2 .back_sub span {
     width: 26px;
     height: 25px;
-    background: gray url(../images/material/arr_btn_slide.png) no-repeat 0;
     display: inline-block;
     margin: 0 10px 0 0;
     vertical-align: middle
@@ -4538,7 +4536,6 @@ header .main_head .nav_menu nav .btm_nav {
 header .main_head .nav_menu .ico_src {
     width: 20px;
     height: 20px;
-    background: url(../images/material/ico_src.png) no-repeat 50%;
     display: inline-block;
     vertical-align: middle;
     margin-left: 25px;
@@ -4568,7 +4565,6 @@ header .main_head .nav_menu .head_src input {
 }
 
 header .main_head .nav_menu .head_src .ico_close {
-    background: url(../images/material/ico_close.png) no-repeat 50%;
     display: inline-block;
     position: absolute;
     right: 0;
@@ -4643,7 +4639,6 @@ header.active .main_head .nav_menu li:first-child {
     -moz-transition: all ease-out .2s;
     -ms-transition: all ease-out .2s;
     -o-transition: all ease-out .2s;
-    background: url(../images/material/arr_btn.png) no-repeat 50%;
     background-size: 6px;
     position: absolute;
     right: 18px;
@@ -4684,7 +4679,6 @@ header.active .main_head .nav_menu li:first-child {
 .btn_sub span {
     position: absolute;
     right: 25px;
-    background: url(../images/material/arr_btn.png);
     display: inline-block;
     width: 7px;
     height: 11px;
@@ -4768,7 +4762,6 @@ header.active .main_head .nav_menu li:first-child {
 .banner .obla_slider .obla_navDirection a {
     height: 35px;
     width: 22px;
-    background: url(../images/material/arr_slide.png) no-repeat 100% 0
 }
 
 .banner .obla_slider .obla_navDirection a.prev {
@@ -4841,7 +4834,6 @@ header.active .main_head .nav_menu li:first-child {
     margin-left: 12px;
     position: absolute;
     right: 25px;
-    background: url(../images/material/arr_btn.png) no-repeat 50%;
     top: 0;
     bottom: 0;
     margin: auto
@@ -5101,15 +5093,7 @@ header.active .main_head .nav_menu li:first-child {
     width: 100%
 }
 
-.middle .find_dealer h3 {
-    font-size: 22px;
-    padding: 0 65px 0 32px;
-    background: url(../images/material/ico_find.png) no-repeat 0;
-    text-transform: uppercase;
-    line-height: 100px;
-    font-weight: 700;
-    border-right: 2px solid #c2c2c2
-}
+
 
 .middle .find_dealer .right {
     padding: 30px 0
@@ -5123,9 +5107,7 @@ header.active .main_head .nav_menu li:first-child {
     vertical-align: middle
 }
 
-.middle .find_dealer .right .cover_combo {
-    background: #fff url(../images/material/arr_select2.jpg) no-repeat 96%
-}
+
 
 .middle .find_dealer .right .btn_sub {
     display: inline-block;
@@ -5183,9 +5165,6 @@ header.active .main_head .nav_menu li:first-child {
     opacity: 0
 }
 
-.middle .prod_feature .box_feature { 
-    background: url("https://www.hondapowerproducts.co.id/html/images/material/home_.jpg") no-repeat right top !important;
-}
 @keyframes  example {
     from {left:0px;}
     to {left: 100px;}
@@ -7876,10 +7855,10 @@ section:after {
     header .main_head .nav_menu nav a {
         min-width: 0
     }
-
+/* 
     header .main_head .nav_menu nav li.have_child.product a {
         padding-right: 30px
-    }
+    } */
 
     header .main_head .nav_menu nav li.have_child.product .sub ul li a {
         padding-right: 0
@@ -8909,7 +8888,7 @@ section:after {
 
     .banner.home {
         margin-bottom: 0;
-        height: 350px
+        height: auto
     }
 
     .banner .obla_slider,
@@ -10019,3 +9998,4 @@ section:after {
         margin: 30px auto 0
     }
 }
+

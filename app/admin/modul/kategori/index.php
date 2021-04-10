@@ -59,19 +59,27 @@
                         <input type="text" class="form-control" name="judul" required>
                     </div>
                 </div>
-                 <!-- <div class="col-md-12">
-                    <div class="form-group">
-                        <label for="">Deskripsi</label>
-                        <textarea id="ckeditor2" class="ckeditor2" name="deskripsi"></textarea>
-                    </div>
-                </div>  -->
                 <div class="col-md-12">
                     <div class="form-group">
-                        <label for="message-text" class="control-label">Gambar</label>
+                        <label for="message-text" class="control-label">Gambar Header</label>
+                        <input type="file" class="form-control" name="gambar_mobile" required>
+                        <small style="color:red">*) ukuran minimal 1000 x 400 px</small>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="message-text" class="control-label">Gambar Menu</label>
                         <input type="file" class="form-control" name="lopoFile" required>
                         <small style="color:red">*) ukuran minimal 400 x 400 px</small>
                     </div>
                 </div>
+                 <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="">Deskripsi</label>
+                        <textarea id="ckeditor2" class="ckeditor2" name="deskripsi"></textarea>
+                    </div>
+                </div> 
+                
                 <div class="col-md-12">
                     <button type="submit" id="btn-kategori" class="btn btn-primary"><i class="fa fa-paper-plane"></i> Simpan</button>
                 </div>
@@ -102,19 +110,28 @@
                 </div> -->
                 <div class="col-md-12">
                     <div class="form-group">
-                        <label for="message-text" class="control-label">Gambar </label>
+                        <label for="message-text" class="control-label">Gambar Header</label>
+                        <input type="file" class="form-control" name="gambar_mobile">
+                        <div class="" id="img-lopo">
+                            <img style="height:200px" src="../images/kategori/small/<?php echo $data['gambar_mobile']."?v".rand(0,99); ?> ?>">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="message-text" class="control-label">Gambar Menu</label>
                         <input type="file" class="form-control" name="lopoFile">
                         <div class="" id="img-lopo">
                             <img style="height:200px" src="../images/kategori/<?php echo $data['gambar'] ?>">
                         </div>
                     </div>
                 </div>
-                 <!-- <div class="col-md-12">
+                 <div class="col-md-12">
                     <div class="form-group">
                         <label for="">Deskripsi</label>
                         <textarea id="ckeditor3" class="ckeditor2" name="deskripsi"><?php echo $data['deskripsi'] ?></textarea>
                     </div>
-                </div>  -->
+                </div> 
                 <input type="submit" id="btn-kategori" class="btn btn-primary" value="Simpan Data">
             </div>
         </form>

@@ -484,7 +484,8 @@ $router->mount("/$_ENV[URL_ADMIN]", function () use ($router, $db, $jmw, $path,$
 
     /** Show Add Form produk **/
     $router->get('/produk-add', function () use ($jmw, $db,$msg) {
-        echo $jmw->render('modul/produk/index', ['act' => 'add']);
+        $kat = $db->connection("SELECT * FROM kategori ORDER BY id_kategori ASC")->fetchAll();
+        echo $jmw->render('modul/produk/index', ['act' => 'add','kat' => $kat]);
     });
 
     /** Show Edit Form produk **/

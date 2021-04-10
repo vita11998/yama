@@ -1,60 +1,69 @@
 <?php $this->layout('template') ?>
+<?php 
+    $header = $db->connection("SELECT gambar_mobile FROM kategori  WHERE id_kategori = $data[id_kategori] ")->fetchColumn();
+    $jdl = $db->connection("SELECT judul_seo FROM kategori  WHERE id_kategori = $data[id_kategori] ")->fetchColumn();
+    $kat = $db->connection("SELECT judul FROM kategori  WHERE id_kategori = $data[id_kategori] ")->fetchColumn();
+?>
 
-<section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg.jpg');"
+<section class="banner hero-wrap hero-wrap-2" style="background-image: url('images/kategori/<?=$header?>');"
     data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
-    <div class="container">
+    <div class="container image">
         <div class="row no-gutters slider-text align-items-end justify-content-center">
             <div class="col-md-9  pb-5 text-center">
-                <h1 class="mb-3 bread">Layanan Hukum</h1>
+                <h1 class="mb-3 bread"><?php echo $data['judul'] ?></h1>
                 <p class="breadcrumbs"><span class="mr-2"><a href="home">Home <i
-                                class="ion-ios-arrow-forward"></i></a></span> <span>Layanan Hukum<i
+                                class="ion-ios-arrow-forward"></i></a></span> <span><?php echo $data['judul'] ?><i
                             class="ion-ios-arrow-forward"></i></span></p>
             </div>
         </div>
     </div>
 </section>
 
-<section class="ftco-section contact-section">
+
+
+<section class="ftco-section ftco-no-pt contact-section">
     <div class="container">
         <div class="row d-flex mb-5 contact-info">
-            <div class="col-md-6 d-flex">
-                <img src="images/produk/<?=$data['gambar']?>" style="width: 100%">
-            </div>
-            <div class="col-lg-6 ">
-                <div class="about-text">
-                    <h3 style="margin-top:10px; font-weight: bold; font-size: 35px;"><?php echo $data['judul'] ?></h3>
-                    <div class="addthis_inline_share_toolbox mt-3"></div>
-                    <hr style="border-top: 5px solid #015786;margin-top:10px; margin-bottom: 20px;">
-                    <?=$data['deskripsi']?>
+            <div class="col-md-4 d-flex">
+                <div class="asside">
+                    <h1>Products</h1>
+                    <nav>
+                    <?php foreach($kategori as $r) : ?>
+                        <a href="kategori-<?=$r['judul_seo']."-".$r['id_kategori']?>"><span class="l_left"
+                                style="height: 0px;"></span><span class="hover" style="width: 0px;"></span><span
+                                style="position:relative"><?=$r['judul']?></span></a>
+                    <?php endforeach ?>
+                    </nav>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-
-<section class="ftco-section bg-light">
-    <div class="container">
-        <div class="row justify-content-center mb-5 pb-3">
-            <div class="col-md-7 heading-section text-center ">
-                <h2>Layanan Lainnya</h2>
-            </div>
-        </div>
-        <div class="row d-flex">
-            <?php foreach($produk as $r) : ?>
-                <div class="col-md-4">
-                <div class="case img d-flex align-items-center justify-content-center"
-                    style="background-image: url(images/produk/<?=$r['gambar']?>);">
-                    <div class="text text-center">
-                        <h3><a href="produk-<?=$r['judul_seo']."-".$r['id_produk']?>"><?=$r['judul']?></a></h3>
-                        <span><?=$namaweb?></span>
+            <div class="col-lg-8 page">
+                <div class="breadcrumb">
+                    <a href="<?=$base_url?>">Home</a>
+                    <a href="produk">Products</a>
+                    <a href="kategori-<?=$jdl."-".$data['id_kategori']?>"><?php echo $kat?></a>
+                    <a href="#"><?php echo $data['judul'] ?></a>
+                </div>
+                <div class="row d-flex mb-5 contact-info">
+                    <div class="col-lg-4">
+                        <img src="images/produk/<?=$data['gambar']?>" style="width: 100%">
+                    </div>
+                    <div class="col-lg-8 d-flex">
+                        <div class="about-text">
+                            <div class="std_content">
+                                <h1><?php echo $data['judul'] ?></h1>
+                                <p><?=$data['promo']?></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="specs_product">
+                            <p class="bo">Specifications</p>
+                            <?=$data['deskripsi']?>
+                        </div>
                     </div>
                 </div>
             </div>
-            <?php endforeach ?>
         </div>
     </div>
 </section>
-
-<!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59dc9d30b368b392"></script>

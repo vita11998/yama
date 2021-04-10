@@ -63,27 +63,27 @@
                                 <li class="sidebar-item">
                                     <a href="home" class="sidebar-link">
                                         <i class="sl-icon-arrow-right"></i>
-                                        <span class="hide-menu"> Welcome Text</span>
+                                        <span class="hide-menu">About Us</span>
                                     </a>
                                 </li>
                                 <li class="sidebar-item">
                                     <a href="page-edit-1" class="sidebar-link">
                                         <i class="sl-icon-arrow-right"></i>
-                                        <span class="hide-menu">Link Video Welcome</span>
+                                        <span class="hide-menu">Maintenance</span>
                                     </a>
                                 </li>
                                 <li class="sidebar-item">
-                                    <a href="keuntungan" class="sidebar-link">
+                                    <a href="page-edit-3" class="sidebar-link">
                                         <i class="sl-icon-arrow-right"></i>
-                                        <span class="hide-menu">Angka</span>
+                                        <span class="hide-menu">Featured Product</span>
                                     </a>
                                 </li>
-                                <li class="sidebar-item">
+                                <!-- <li class="sidebar-item">
                                     <a href="client" class="sidebar-link">
                                         <i class="sl-icon-arrow-right"></i>
                                         <span class="hide-menu">Our Client</span>
                                     </a>
-                                </li>
+                                </li> -->
                             </ul>
                         </li>
                         <li class="sidebar-item">
@@ -98,59 +98,92 @@
                             <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)"
                                 aria-expanded="false">
                                 <i class="sl-icon-bag"></i>
-                                <span class="hide-menu">Produk </span>
+                                <span class="hide-menu">Product </span>
                             </a>
                             <ul aria-expanded="false" class="collapse  first-level">
                                 <li class="sidebar-item">
                                     <a href="produk" class="sidebar-link">
                                         <i class="sl-icon-tag"></i>
-                                        <span class="hide-menu">List Produk</span>
+                                        <span class="hide-menu">List Product</span>
                                     </a>
                                 </li>
                                 <li class="sidebar-item">
                                     <a href="kategori" class="sidebar-link">
                                         <i class="sl-icon-plane"></i>
-                                        <span class="hide-menu">Kategori Produk</span>
+                                        <span class="hide-menu">Kategori Product</span>
                                     </a>
                                 </li>
                             </ul>
                         </li>
 
                         <li class="sidebar-item">
-                            <a href="foto" class="sidebar-link">
-                                <i class="sl-icon-tag"></i>
-                                <span class="hide-menu">Tim Astungkara</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-item">
                             <a href="partner" class="sidebar-link">
                                 <i class="sl-icon-plane"></i>
-                                <span class="hide-menu">Partner</span>
+                                <span class="hide-menu">Dealers</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="produk"
+                            <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)"
                                 aria-expanded="false">
-                                <i class="sl-icon-drop"></i>
-                                <span class="hide-menu">Layanan</span>
+                                <i class="sl-icon-phone"></i>
+                                <span class="hide-menu">Promotion </span>
                             </a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a href="transportasi" class="sidebar-link">
-                                <i class="sl-icon-fire"></i>
-                                <span class="hide-menu">Testimoni</span>
-                            </a>
+                            <ul aria-expanded="false" class="collapse  first-level">
+                                <li class="sidebar-item">
+                                    <a href="foto" class="sidebar-link">
+                                        <i class="sl-icon-tag"></i>
+                                        <span class="hide-menu">List Promotion</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="page-edit-14" class="sidebar-link">
+                                        <i class="sl-icon-fire"></i>
+                                        <span class="hide-menu">SEO Promotion</span>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
 
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="artikel"
+                            <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)"
                                 aria-expanded="false">
                                 <i class="sl-icon-tag"></i>
-                                <span class="hide-menu">Artikel</span>
+                                <span class="hide-menu">News & Event </span>
+                            </a>
+                            <ul aria-expanded="false" class="collapse  first-level">
+                                <li class="sidebar-item">
+                                    <a class="sidebar-link waves-effect waves-dark sidebar-link" href="artikel"
+                                        aria-expanded="false">
+                                        <i class="sl-icon-tag"></i>
+                                        <span class="hide-menu">News & Event</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="page-edit-9" class="sidebar-link">
+                                        <i class="sl-icon-fire"></i>
+                                        <span class="hide-menu">SEO News & Event</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="page-edit-8" class="sidebar-link">
+                                <i class="sl-icon-fire"></i>
+                                <span class="hide-menu">Contact Us</span>
                             </a>
                         </li>
 
                         <li class="sidebar-item">
+                            <a href="page-edit-12" class="sidebar-link">
+                                <i class="sl-icon-drop"></i>
+                                <span class="hide-menu">Career</span>
+                            </a>
+                        </li>
+
+
+
+                        <!-- <li class="sidebar-item">
                             <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)"
                                 aria-expanded="false">
                                 <i class="sl-icon-phone"></i>
@@ -172,7 +205,7 @@
                                     </a>
                                 </li>
                             </ul>
-                        </li>
+                        </li> -->
 
 
                         <li class="nav-small-cap">

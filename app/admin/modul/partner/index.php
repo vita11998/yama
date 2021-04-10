@@ -1,4 +1,4 @@
-<?php $this->layout('template', ['hal'=>'Partner']) ?>
+<?php $this->layout('template', ['hal'=>'Dealers']) ?>
 <?php
 	$module = "partner";
 
@@ -88,12 +88,12 @@
                                     <input name="judul" type="text" class="form-control" required>
                                 </div>
                             </div>
-                            <div class="col-md-8">
+                            <!-- <div class="col-md-8">
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Keahlian</label>
                                     <input name="kode_produk" type="text" class="form-control">
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Tgl Publish</label>
@@ -194,12 +194,12 @@
                                         value="<?php echo $data['judul'] ?>" required>
                                 </div>
                             </div>
-                            <div class="col-md-8">
+                            <!-- <div class="col-md-8">
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Keahlian</label>
                                     <input name="kode_produk" type="text" class="form-control" value="<?php echo $data['kode_produk'] ?>">
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Tgl Publish</label>

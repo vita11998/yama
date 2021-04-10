@@ -69,7 +69,7 @@ use \Gumlet\ImageResize;
                     'judul' => $_POST['judul'],
                     'id_admin' => $_SESSION['id_admin'],
                     'judul_seo' => $judul_seo,
-                    'kode_produk' => $_POST['kode_produk']
+                    'kode_produk' => $_POST['kode_produk'],
                     'keyword' => $_POST['keyword'],
                     'deskripsi' => $_POST['deskripsi'],
                     'description' => $_POST['description'],

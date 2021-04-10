@@ -36,6 +36,7 @@ use \Gumlet\ImageResize;
                             'id_kategori' => $_POST['id_kategori'],
                             'stok' => $_POST['stok'],
                             'promo' => $_POST['promo'],
+                            'unggulan' => $_POST['unggulan'],
                             'keyword' => $_POST['keyword'],
                             'description' => $_POST['description'],
                             'gambar' => $nama_file_unik,
@@ -77,6 +78,7 @@ use \Gumlet\ImageResize;
                     'id_kategori' => $_POST['id_kategori'],
                     'stok' => $_POST['stok'],
                     'promo' => $_POST['promo'],
+                    'unggulan' => $_POST['unggulan'],
                     'keyword' => $_POST['keyword'],
                     'description' => $_POST['description'],
                     'tgl' => $tgl_post
@@ -118,6 +120,8 @@ use \Gumlet\ImageResize;
                     'id_kategori' => $_POST['id_kategori'],
                     'deskripsi' => $_POST['deskripsi'],
                     'keyword' => $_POST['keyword'],
+                    'promo' => $_POST['promo'],
+                    'unggulan' => $_POST['unggulan'],
                     'description' => $_POST['description'],
                     'gambar' => $nama_file_unik,
                     'tgl' => date('Y-m-d')

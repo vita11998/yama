@@ -9,11 +9,33 @@ if ($act == 'update') {
     $tipe_file = $_FILES['lopoFile']['type'];
     $ukuran = $_FILES['lopoFile']['size'];
     $tipe_file2 = seo2($tipe_file);
+    $tipe = seo2($_FILES['gambar_mobile']['type']);
     $seojdul = seo($jdl2);
     $acak = rand(00, 99);
     $nama_file_unik = $seojdul . "-" . $acak . "." . $tipe_file2;
     $nama_file_unik = $seojdul . "-" . $acak . "." . $tipe_file2;
+    $nama_file_unik2 = $seojdul  . "." . $tipe;
     $nama_seo = seo($_POST["judul"]);
+
+    $res2 = uploadGambar($seojdul, 'kategori', "gambar_mobile");
+    if($res2 == true){
+        $datas = array(
+            'gambar_mobile' => $nama_file_unik2,
+        );
+        $db->update("kategori", $datas, "id_kategori= '$_POST[id_kategori]' ");
+        $pathToImage = 'images/kategori/' . $nama_file_unik2;
+        $pathSmall = 'images/kategori/small/' . $nama_file_unik2;
+        lopoCompress('kategori', $pathToImage, $tipe, 1);
+        lopoCompress('kategori/small', $pathToImage, $tipe, 1);
+
+        $image = new ImageResize($pathSmall);
+        $image->resize(640, 640);
+        $image->save($pathSmall);
+
+        $image2 = new ImageResize($pathToImage);
+        $image2->resize(640, 640);
+        $image2->save($pathToImage);
+}
 
     if (!empty($lokasi_file)) {
         if (($ukuran == 0) or ($ukuran == 02) or ($ukuran > 2060817)) {
@@ -89,7 +111,9 @@ elseif ($act == 'add') {
     $tipe_file2 = seo2($tipe_file);
     $seojdul = seo($_POST["judul"]);
     $acak = rand(00, 99);
+    $tipe = seo2($_FILES['gambar_mobile']['type']);
     $nama_file_unik = $seojdul . "-" . $acak . "." . $tipe_file2;
+    $nama_file_unik2 = $seojdul  . "." . $tipe;
     $nama_seo = seo($_POST["judul"]);
     date_default_timezone_set('Asia/Jakarta');
 
@@ -102,7 +126,8 @@ elseif ($act == 'add') {
             echo "<script>window.alert('Gagal Upload Gambar, ukuran gambar lebih dari 2 MB !'); window.location(history.back(-1))</script>";
         } else {
             $res = lopoUpload($seojdul . '-' . $acak, 'kategori');
-            if ($res == true) {
+            $res2 = uploadGambar($seojdul, 'slider', "gambar_mobile");
+            if ($res == true &&  $res2 == true) {
                 try {
 
                     $datas = array(
@@ -110,6 +135,7 @@ elseif ($act == 'add') {
                         'judul_seo' => $nama_seo,
                         'gambar' => $nama_file_unik,
                         'deskripsi' => $_POST["deskripsi"],
+                        'gambar_mobile' => $nama_file_unik2,
                     );
                     $saved = $db->insert('kategori', $datas);
                     $insertId = $db->lastId();

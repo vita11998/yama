@@ -67,12 +67,12 @@
 			center: true,
 			loop: true,
 			items:1,
-			autoplay:true,
+			autoplay:false,
 			autoplayTimeout:1000,
 			autoplayHoverPause:true,
 			margin: 30,
 			stagePadding: 0,
-			nav: false,
+			nav: true,
 			navText: ['<span class="ion-ios-arrow-back">', '<span class="ion-ios-arrow-forward">'],
 			responsive:{
 				0:{

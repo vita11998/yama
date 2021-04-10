@@ -1,4 +1,4 @@
-<?php $this->layout('template', ['hal'=>'Tim Astungkara']) ?>
+<?php $this->layout('template', ['hal'=>'Promotion']) ?>
 <?php
 	$module = "foto";
 
@@ -90,7 +90,7 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Keahlian</label>
+                                    <label for="exampleInputEmail1">Tgl Valid</label>
                                     <input name="kode_produk" type="text" class="form-control">
                                 </div>
                             </div>
@@ -196,7 +196,7 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Keahlian</label>
+                                    <label for="exampleInputEmail1">Tgl Valid</label>
                                     <input name="kode_produk" type="text" class="form-control" value="<?php echo $data['kode_produk'] ?>">
                                 </div>
                             </div>
@@ -282,7 +282,7 @@
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" id="keyword-tab" data-toggle="tab" href="#keyword"
-                                            role="tab" aria-controls="profile" aria-selected="false">Keyword</a>
+                                            role="tab" aria-controls="keyword" aria-selected="false">Keyword</a>
                                     </li>
                                 </ul>
                                 <div class="tab-content" id="myTabContent">

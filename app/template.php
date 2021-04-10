@@ -1,6 +1,6 @@
 <?php
-$default 	= "Astungkara Law";
-$judul  	= "Astungkara Law";
+$default 	= "Yamamoto";
+$judul  	= "Yamamoto";
 if($seo=='home' ){
 	$tseo = $db->connection("SELECT * FROM page WHERE id_page='0' ");
 	$seo = $tseo->fetch(PDO::FETCH_ASSOC);
@@ -58,7 +58,9 @@ elseif($seo=='contact'){
     <link rel="stylesheet" href="assets/css/icomoon.css">
     <link rel="stylesheet" href="assets/css/style.css?v<?=date('i:s')?>" />
     <link rel="stylesheet" href="assets/css/styles.min.css?v<?=date('i:s')?>" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
     <?=$deskrip[84]?>
 </head>
 
@@ -69,22 +71,23 @@ elseif($seo=='contact'){
                 <div class="left">
                     <a href="" class="login">Monday - Friday</a>
                     <a href="" target="_self">
-                    <i class="fa fa-clock"> </i> 08.00 - 16.00
+                        <i class="fa fa-clock"> </i> 08.00 - 16.00
                     </a>
                     <a href="tel:<?=$deskrip['82']?>" target="_blank">
-                        <i class="fa fa-phone"> </i> <?=$deskrip['82']?>
+                        <i class="fa fa-phone"> </i> <?=$deskrip['10']?>
                     </a>
-                    <a href="<?=$base_url?>/en/service-support/documents"><i class="fab fa-whatsapp"> </i> <?=$deskrip['82']?></a>
+                    <a href="https://api.whatsapp.com/send?phone=<?=$deskrip[7]?>&text=<?=$textBtnWa?>"
+                        target="blank"><i class="fab fa-whatsapp"> </i> <?=$deskrip['10']?></a>
                 </div>
                 <div class="right">
-                    <a href="http://en.honda-powerproducts.com/" target="_blank">
-                    <i class="fab fa-instagram"> </i>
+                    <a href="<?=$sosmed[3]['link']?>" target="_blank">
+                        <i class="fab fa-instagram"> </i>
                     </a>
-                    <a href="http://en.honda-powerproducts.com/" target="_blank">
-                    <i class="fab fa-twitter"> </i>
+                    <a href="<?=$sosmed[1]['link']?>" target="_blank">
+                        <i class="fab fa-twitter"> </i>
                     </a>
-                    <a href="http://en.honda-powerproducts.com/" target="_blank">
-                    <i class="fab fa-facebook"> </i>
+                    <a href="<?=$sosmed[0]['link']?>" target="_blank">
+                        <i class="fab fa-facebook"> </i>
                     </a>
                 </div>
             </div>
@@ -100,28 +103,23 @@ elseif($seo=='contact'){
                     <nav>
                         <div class="nav_content">
                             <ul>
-                                <li class="have_child">
-                                    <a href="tentang"
-                                        target="_self">About Us</a>
+                                <li>
+                                    <a href="about" target="_self">About Us</a>
                                 </li>
 
                                 <li class="have_child product">
                                     <a href="#" target="_self">
-                                        Products
+                                        Products <i class="fa fa-chevron-down" aria-hidden="true"> </i>
                                     </a>
                                     <div class="sub prod" style="display: none; opacity: 0;">
                                         <div class="wrapper w16">
                                             <ul>
-                                            <?php foreach($kategori as $r) : ?>
+                                                <?php foreach($kategori as $r) : ?>
                                                 <li>
-                                                    <a href="kategori-<?=$r['judul_seo']."-".$r['id_kategori']?>"
-                                                        class="one">
-                                                        <img
-                                                            src="images/kategori/<?=$r['gambar']?>">
+                                                    <a href="kategori-<?=$r['judul_seo']."-".$r['id_kategori']?>">
+                                                        <img src="images/kategori/<?=$r['gambar']?>">
                                                         <span><?=$r['judul']?></span>
                                                     </a>
-                                                    <div class="sub2">
-                                                        <a href="" class="back_sub"><span></span><?=$r['judul']?></a>
                                                 </li>
                                                 <?php endforeach ?>
                                             </ul>
@@ -131,89 +129,21 @@ elseif($seo=='contact'){
 
 
                                 <li>
-                                    <a href="<?=$base_url?>/dealer" target="_self">Dealers</a>
+                                    <a href="dealers" target="_self">Dealers</a>
                                 </li>
 
                                 <li>
-                                    <a href="artikel"
-                                        target="_self">Promotion</a>
+                                    <a href="promotion" target="_self">Promotion</a>
                                 </li>
 
-                                <li class="have_child">
-                                    <a href="artikel"
-                                        target="_self">News &amp; Events</a>
+                                <li>
+                                    <a href="artikel" target="_self">News &amp; Events</a>
                                 </li>
 
                             </ul>
-                            <div class="btm_nav">
-
-                                <div class="list">
-                                    <a href="<?=$base_url?>/contact-us" target="_self">
-                                        Contact Us
-                                    </a>
-                                    <a href="http://sustainability.honda.asia/" target="_blank">
-                                        Sustainability Campaign
-                                    </a>
-
-                                    <a href="http://en.honda-powerproducts.com/" target="_blank">
-                                        HONDA POWER PRODUCTS WORLDWIDE
-                                    </a>
-                                </div>
-                                <div class="src_lang">
-                                    <div class="lang">
-                                        <a href="<?=$base_url?>/en/service-support/documents"
-                                            class="active">English</a>
-                                        <a
-                                            href="<?=$base_url?>/id/service-support/documents">Indonesia</a>
-                                    </div>
-                                    <div class="src_mob">
-                                        <form method="get" action="<?=$base_url?>/search"
-                                            id="searchForm">
-                                            <input type="text" name="keyword" placeholder="Search">
-                                            <input type="submit" name="" value="">
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
                     </nav>
-                    <span class="ico_src"></span>
-                    <form class="head_src" method="get" action="<?=$base_url?>/search"
-                        id="searchForm" style="width: 993px;">
-                        <input type="text" name="keyword" placeholder="Search...">
-                        <span class="ico_close"></span>
-                    </form>
                     <div class="menu_mobile">
-                        <div class="src_mob">
-                            <span class="ico_src"></span>
-                            <form method="get" action="<?=$base_url?>/search" id="searchForm">
-                                <input type="text" name="keyword" placeholder="Search">
-                                <input type="submit" name="" value="">
-                            </form>
-                        </div>
-                        <div class="lang">
-                            <a href="<?=$base_url?>/en/service-support/documents"
-                                class="active">English</a>
-                            <a href="<?=$base_url?>/id/service-support/documents">Indonesia</a>
-                        </div>
-                        <div class="mob_login">
-                            <a href="" class="login">Dealer Login </a>
-                            <div class="box_login">
-                                <h4>DEALER LOGIN</h4>
-                                <form method="POST" action="<?=$base_url?>/dealers/login"
-                                    accept-charset="UTF-8"><input name="_token" type="hidden"
-                                        value="hMnJi9HUEO6aruIXameRmkeLERkAprVoFJeSELXx">
-                                    <input type="text" name="username" placeholder="Username">
-                                    <input type="password" name="password" placeholder="Password">
-                                    <div class="btn_2">
-                                        <input type="submit" name="" value="Login">
-                                    </div>
-                                </form>
-                                <p>Forgot your password? <a
-                                        href="<?=$base_url?>/dealers/forgot">CLICK HERE</a></p>
-                            </div>
-                        </div>
                         <a href="" class="toggle_menu">
                             <span></span>
                             <span></span>
@@ -235,33 +165,28 @@ elseif($seo=='contact'){
             <div class="block">
                 <img src="images/<?=$deskrip[86]?>">
                 <p>&copy;<script>
-                            document.write(new Date().getFullYear());
-                        </script> <?=$namaweb?>
+                        document.write(new Date().getFullYear());
+                    </script> <?=$namaweb?>
                 </p>
             </div>
             <div class="block">
                 <nav class="foot">
-                                    <a href="kontak" target="_self">Contact Us</a>
-                                    <a href="<?=$base_url?>/karir" target="_self">Career</a>
-                                    <a href="<?=$base_url?>/sitemap" target="_self">Sitemap</a>
-                                    <a href="http://world.honda.com" target="_blank">Honda Global</a>
-                                </nav>
-                <div class="socmed">
-                                    <a target="_blank" rel="nofollow" href="https://www.facebook.com/HondaPowerID/" class="fb"><i class="fab fa-facebook"> </i></a>
-                                    <a target="_blank" rel="nofollow" href="https://www.instagram.com/hondapower.id/" class="instag"><i class="fab fa-instagram"> </i></a>
-                                    <a target="_blank" rel="nofollow" href="https://www.youtube.com/channel/UCj_uJ_SdOSqURMShbMxuD9Q" class="yt"><i class="fab fa-twitter"> </i></a>
-                                   
-                </div>
+                    <a href="kontak" target="_self">Contact Us</a>
+                    <a href="career" target="_self">Career</a>
+                    <a href="sitemap" target="_self">Sitemap</a>
+                </nav>
             </div>
             <div class="block">
-                <form class="sub" action="<?=$base_url?>/subscriber" method="post" id="subsForm">
-                    <label>Subscribe now to receive daily updates</label>
-                    <input type="email" id="emailID" name="email" placeholder="Email Address" required="required">
-                    <input type="hidden" name="_method" value="post">
-                    <input type="hidden" name="_token" value="hMnJi9HUEO6aruIXameRmkeLERkAprVoFJeSELXx">
-                    <input type="submit" name="" value="">
-                    <label id="success" class="subscriber-success" style=""></label>  
-                </form>
+                <?=$deskrip[3]?>
+                <div class="socmed">
+                    <a target="_blank" rel="nofollow" href="<?=$sosmed[0]['link']?>" class="fb"><i
+                            class="fab fa-facebook"> </i></a>
+                    <a target="_blank" rel="nofollow" href="<?=$sosmed[3]['link']?>" class="instag"><i
+                            class="fab fa-instagram"> </i></a>
+                    <a target="_blank" rel="nofollow" href="<?=$sosmed[1]['link']?>" class="yt"><i
+                            class="fab fa-twitter"> </i></a>
+
+                </div>
             </div>
         </div>
     </footer>
@@ -291,8 +216,9 @@ elseif($seo=='contact'){
     <script src="assets/js/aos.js"></script>
     <script src="assets/js/jquery.animateNumber.min.js"></script>
     <script src="assets/js/scrollax.min.js"></script>
-    <script src="assets/js/main.js?2"></script>
+    <script src="assets/js/main.js?4"></script>
     <script src="assets/js/main.min.js?2"></script>
+
 
 
 </body>

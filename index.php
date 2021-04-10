@@ -41,14 +41,14 @@ $router->get('/', function () use ($templates,$db) {
     $header  = $db->connection('SELECT * FROM page  WHERE id_page = 1 ')->fetch();
 
     $welcome  = $db->connection('SELECT * FROM page  WHERE id_page = 0 ')->fetch();
-
+    $prakata  = $db->connection('SELECT * FROM page  WHERE id_page = 3 ')->fetch();
     $keunggulan  = $db->connection("SELECT * FROM transportasi ")->fetchAll();
 
     $keuntungan  = $db->connection("SELECT * FROM keuntungan ORDER BY id_keuntungan ASC LIMIT 3")->fetchAll();
 
     $keuntungan2  = $db->connection("SELECT * FROM keuntungan WHERE id_keuntungan = 8")->fetch();
 
-    $produk  = $db->connection("SELECT * FROM produk ")->fetchAll();
+    $produk  = $db->connection("SELECT * FROM produk WHERE unggulan='ya' ")->fetchAll();
     $slider  = $db->connection("SELECT * FROM slider ")->fetchAll();
     $foto  = $db->connection("SELECT * FROM foto ")->fetchAll();
     $partner = $db->connection("SELECT * FROM partner LIMIT 4")->fetchAll();
@@ -63,6 +63,7 @@ $router->get('/', function () use ($templates,$db) {
         'welcome'    => $welcome,
         'produk'    => $produk,
         'foto'    => $foto,
+        'prakata' => $prakata,
         'artikel'    => $artikel,
         'partner'    => $partner,
         'keunggulan'    => $keunggulan,
@@ -106,6 +107,36 @@ $router->get('/kontak', function () use ($templates,$db) {
 
 });
 
+$router->get('/about', function () use ($templates,$db) {
+
+    /** SEO */
+    $templates->addData(['seo' => 'detpage','id' => 4]);
+
+    $data        = $db->read('page','*', 'id_page = 4')->fetch(PDO::FETCH_ASSOC);
+    echo $templates->render('page', ['data' => $data,]);
+
+});
+
+$router->get('/career', function () use ($templates,$db) {
+
+    /** SEO */
+    $templates->addData(['seo' => 'detpage','id' => 12]);
+
+    $data        = $db->read('page','*', 'id_page = 12')->fetch(PDO::FETCH_ASSOC);
+    echo $templates->render('page', ['data' => $data,]);
+
+});
+
+$router->get('/sitemap', function () use ($templates,$db) {
+
+    /** SEO */
+    $templates->addData(['seo' => 'detpage','id' => 0]);
+
+    $data        = $db->read('page','*', 'id_page = 0')->fetch(PDO::FETCH_ASSOC);
+    echo $templates->render('sitemap', ['data' => $data,]);
+
+});
+
 
 $router->get('/produk', function () use ($templates,$db) {
 
@@ -113,8 +144,7 @@ $router->get('/produk', function () use ($templates,$db) {
     $templates->addData(['seo' => 'produk']);
 
     $data        = $db->connection('SELECT * FROM produk')->fetchAll();
-    
-    echo $templates->render('produk', ['data' => $data,]);
+    echo $templates->render('produk', ['data' => $data]);
 
 });
 
@@ -128,9 +158,69 @@ $router->get('/produk-(.*)-(\d+)', function ($slug,$id) use ($templates,$db) {
     $db->update('produk',array('dilihat' => $dilihat), "id_produk = $datas[id_produk]");
 
     $multi        = $db->connection("SELECT * FROM gallery_produk WHERE id_produk = $id ")->fetchAll();
-    
     $produk       = $db->connection("SELECT * FROM produk WHERE id_produk != $id ORDER BY id_produk DESC LIMIT 4  ")->fetchAll();
     echo $templates->render('detproduk', ['data' => $datas, 'produk' =>$produk,'multi'=> $multi] );
+
+});
+
+$router->get('/kategori-(.*)-(\d+)-page-(\d+)', function ($slug,$id,$idPage) use ($templates,$db) {
+
+    /** SEO */
+    $templates->addData(['seo' => 'kategoriProduk','id' => $id]);
+
+    /** Paging portofolio */
+    $page   	    = new pagingAll;
+    $batas 		    = 12;
+    $idPag          = $idPage;
+    $posisi 	    = $page->cariPosisi($batas,$idPag);
+    $jmldata        = $db->connection("SELECT * FROM produk WHERE id_kategori = $id  ")->rowCount();
+	$jmlhalaman     = $page->jmlhalaman($jmldata, $batas);
+    $linkHalaman    = $page->navHalaman($idPag, $jmlhalaman,'kategori-'.$slug."-".$id);
+    $pagination     = array(
+        'batas'         => $batas,
+        'jmldata'       => $jmldata,
+        'jmlhalaman'    => $jmlhalaman,
+        'linkHalaman'   => $linkHalaman
+    );
+
+    $produk  = $db->connection("SELECT * FROM produk WHERE id_kategori = $id LIMIT $posisi,$batas ")->fetchAll();
+
+    $data         = $db->connection("SELECT * FROM page  WHERE id_page = 4 ")->fetch(PDO::FETCH_ASSOC);
+    $judul = $db->connection("SELECT judul FROM kategori  WHERE id_kategori = $id ")->fetchColumn();
+    $header = $db->connection("SELECT * FROM kategori  WHERE id_kategori = $id ")->fetch(PDO::FETCH_ASSOC);
+
+    echo $templates->render('produk', ['produk' => $produk,'pagination' => $pagination, 'data' => $data,'judul' => $judul, 'header' => $header]);
+
+});
+
+$router->get('/kategori-(.*)-(\d+)', function ($slug,$id) use ($templates,$db) {
+
+    /** SEO */
+    $templates->addData(['seo' => 'kategoriProduk','id' => $id]);
+
+    /** Paging portofolio */
+    $page   	    = new pagingAll;
+    $batas 		    = 12;
+    $idPag          = 1;
+    $posisi 	    = $page->cariPosisi($batas,$idPag);
+    $jmldata        = $db->connection("SELECT * FROM produk WHERE id_kategori = $id  ")->rowCount();
+	$jmlhalaman     = $page->jmlhalaman($jmldata, $batas);
+    $linkHalaman    = $page->navHalaman($idPag, $jmlhalaman,'kategori-'.$slug."-".$id);
+    $pagination     = array(
+        'batas'         => $batas,
+        'jmldata'       => $jmldata,
+        'jmlhalaman'    => $jmlhalaman,
+        'linkHalaman'   => $linkHalaman
+    );
+    
+
+    $produk  = $db->connection("SELECT * FROM produk WHERE id_kategori = $id LIMIT $posisi,$batas ")->fetchAll();
+
+    $data         = $db->connection("SELECT * FROM page  WHERE id_page = 4 ")->fetch(PDO::FETCH_ASSOC);
+    $judul = $db->connection("SELECT judul FROM kategori  WHERE id_kategori = $id ")->fetchColumn();
+    $header = $db->connection("SELECT * FROM kategori  WHERE id_kategori = $id ")->fetch(PDO::FETCH_ASSOC);
+    
+    echo $templates->render('produk', ['produk' => $produk,'pagination' => $pagination, 'data' => $data,'judul' => $judul, 'header' => $header]);
 
 });
 
@@ -276,7 +366,8 @@ $router->get('/artikel', function () use ($templates,$db) {
     $templates->addData(['seo' => 'artikel']);
 
     $data     = $db->connection("SELECT *,DAY(tgl) as day, MONTHNAME(tgl) as month, YEAR(tgl) as year FROM artikel")->fetchAll();
-    echo $templates->render('artikel',['data' => $data] );
+    $head = $db->connection("SELECT * FROM page  WHERE id_page = 9 ")->fetch(PDO::FETCH_ASSOC);
+    echo $templates->render('artikel',['data' => $data, 'head' => $head] );
 });
 
 $router->get('/artikel-page-(\d+)', function ($id) use ($templates,$db) {
@@ -287,7 +378,7 @@ $router->get('/artikel-(.*)-(\d+)', function ($slug,$id) use ($templates,$db) {
     /** SEO */
     $templates->addData(['seo' => 'detartikel', 'id_seo' => $id]);
 
-    $datas      = $db->read('artikel', '*', "id_artikel = '$id' ")->fetch(PDO::FETCH_ASSOC);
+    $datas      = $db->connection("SELECT *,DAY(tgl) as day, MONTHNAME(tgl) as month, YEAR(tgl) as year FROM artikel WHERE id_artikel = '$id' ")->fetch(PDO::FETCH_ASSOC);
     $artikel      = $db->connection("SELECT *,DAY(tgl) as day, MONTHNAME(tgl) as month, YEAR(tgl) as year FROM artikel WHERE id_artikel != $id LIMIT 3")->fetchAll();
 
     $dilihat = $datas['dilihat'] + 1;
@@ -296,15 +387,16 @@ $router->get('/artikel-(.*)-(\d+)', function ($slug,$id) use ($templates,$db) {
     echo $templates->render('detartikel', ['data' => $datas,'artikel' => $artikel] );
 });
 
-$router->get('/foto', function () use ($templates,$db) {
+$router->get('/promotion', function () use ($templates,$db) {
     /** SEO */
     $templates->addData(['seo' => 'foto']);
 
     $data     = $db->connection("SELECT * FROM foto ")->fetchAll();
-    echo $templates->render('foto',['data' => $data] );
+    $promot = $db->connection("SELECT * FROM page  WHERE id_page = 14 ")->fetch(PDO::FETCH_ASSOC);
+    echo $templates->render('foto',['data' => $data, 'promot' => $promot] );
 });
 
-$router->get('/foto-(.*)-(\d+)', function ($slug,$id) use ($templates,$db) {
+$router->get('/promotion-(.*)-(\d+)', function ($slug,$id) use ($templates,$db) {
     /** SEO */
     $templates->addData(['seo' => 'detfoto', 'id_seo' => $id]);
 
@@ -317,7 +409,7 @@ $router->get('/foto-(.*)-(\d+)', function ($slug,$id) use ($templates,$db) {
     echo $templates->render('detfoto', ['data' => $datas,'foto' => $foto] );
 });
 
-$router->get('/partner', function () use ($templates,$db) {
+$router->get('/dealers', function () use ($templates,$db) {
     /** SEO */
     $templates->addData(['seo' => 'partner']);
 
